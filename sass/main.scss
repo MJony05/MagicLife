@@ -125,26 +125,14 @@
 //     transform: translateY(0);
 //   }
 // }
-
-// /* @keyframes logomove {
-//   0% {
-//     transform: translate(0, 0) rotate(0);
-//   }
-//   25% {
-//     transform: translateY(88vw, 0) rotate(90deg);
-//   }
-//   50% {
-//     transform: translate(88vw, 50vh) rotate(0);
-//   }
-//   75% {
-//     transform: translate(0, 70vh) rotate(90deg);
-//   }
-//   100% {
-//     transform: translate(0, 0) rotate(0);
-//   }
-// } */
 $main-color: #150070;
+$color-text-white: rgb(161, 18, 18);
 nav {
   background-color: $main-color;
-  color: white;
+}
+body {
+  background-color: aliceblue;
+}
+.navigation {
+  color: $color-text-white;
 }
