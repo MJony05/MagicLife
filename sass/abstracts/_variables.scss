@@ -1,4 +1,8 @@
-$linear-back: linear-gradient(#28b4859f, #28b485af);
+$linear-back: linear-gradient(
+  to right bottom,
+  rgba(126, 213, 111, 0.8),
+  rgba(40, 180, 133, 0.8)
+);
 $color-primary: #7ed56f;
 $color-primary-light: #55c57a;
 $color-primary-dark: #28b485;
