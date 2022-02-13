@@ -33,7 +33,7 @@
   position: relative;
   &:hover {
     box-shadow: 0 0.5rem 2.5rem $button-shadow;
-    /* transform: translateY(-3px); */
+    transform: translateY(-3px);
   }
   &::after {
     content: "";
