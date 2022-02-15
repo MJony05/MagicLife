@@ -9,6 +9,42 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" id="nav__check" class="navigation__checkbox" />
+      <label for="nav__check" class="navigation__button">
+        <span class="navigation__icon"></span>
+      </label>
+      <div class="navigation__background"></div>
+      <div class="navigation__menu">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#about" onclick="HideFunc()" class="navigation__link"
+              >01 About MagicLife</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" onclick="HideFunc()" class="navigation__link"
+              >02 Your Benefit</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" onclick="HideFunc()" class="navigation__link"
+              >03 Popular tours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" onclick="HideFunc()" class="navigation__link"
+              >04 Stories</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#book-now" onclick="HideFunc()" class="navigation__link"
+              >05 Book now</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
     <header class="header">
       <div class="header__img--logo">
         <img src="images/logo-white.png" alt="" />
@@ -20,7 +56,7 @@
       </div>
     </header>
     <main>
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="u-text-center u-margin-bottom-big">
           <h2 class="heading-secondary u-margin-bottom--medium">
             Exciting tours for adventure people
@@ -69,7 +105,7 @@
           </div>
         </div>
       </section>
-      <section class="section-feature">
+      <section class="section-feature" id="feature">
         <div class="row">
           <div class="col-1-of-4">
             <div class="feature-box">
@@ -113,7 +149,7 @@
           </div>
         </div>
       </section>
-      <section class="section-tours">
+      <section class="section-tours" id="tours">
         <div class="u-text-center u-margin-bottom-big">
           <h2 class="heading-secondary u-margin-bottom--medium">
             Exciting tours for adventure people
@@ -121,7 +157,7 @@
         </div>
         <div class="row">
           <div class="col-1-of-3">
-            <div class="card">
+            <div class="card" id="card">
               <div class="card__side card__side--front">
                 <div class="card-picture card-picture-1"></div>
                 <h4 class="card-heading">
@@ -145,7 +181,7 @@
                     <p class="card__price--only">only</p>
                     <p class="card__price--value">$297</p>
                   </div>
-                  <div class="card__btn header__title--btn">BOOK NOW!</div>
+                  <a href="#popup" style="display:inline-block;" class="card__btn header__title--btn">BOOK NOW!</a>
                 </div>
               </div>
             </div>
@@ -175,7 +211,7 @@
                     <p class="card__price--only">only</p>
                     <p class="card__price--value">$297</p>
                   </div>
-                  <div class="card__btn header__title--btn">BOOK NOW!</div>
+                  <a href="#popup" style="display: inline-block;" class="card__btn header__title--btn">BOOK NOW!</a>
                 </div>
               </div>
             </div>
@@ -205,13 +241,187 @@
                     <p class="card__price--only">only</p>
                     <p class="card__price--value">$297</p>
                   </div>
-                  <div class="card__btn header__title--btn">BOOK NOW!</div>
+                  <a href="#popup" style="display: inline-block;" class="card__btn header__title--btn"></>
+                    BOOK NOW!
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="btn-box">
+          <div class="header__title--btn header__title--btn-green">
+            BUY NOW!
+          </div>
+        </div>
       </section>
+      <section class="stories" id="stories">
+        <div class="story__video">
+          <video autoplay muted loop>
+            <source src="./images/video.mp4" />
+            <source src="./images/video.webm" />
+          </video>
+        </div>
+        <div class="u-text-center">
+          <h2 class="heading-secondary u-margin-boottom--big">
+            WE MAKE PEOPLE GENUINELY HAPPY
+          </h2>
+        </div>
+        <div class="row u-margin-bottom--medium">
+          <div class="story">
+            <div class="story__img">
+              <img src="./images/nat-6.jpg" alt="" class="story__img--box" />
+              <div class="story__img--caption">
+                <p>Marry Smith</p>
+              </div>
+            </div>
+            <div class="story__info">
+              <h3 class="heading-tertiary">
+                I HAD THE BEST WEEK EVER WITH MY FAMILY
+              </h3>
+              <p class="text-box">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ea
+                maxime enim molestiae corporis tenetur dolorum modi, expedita
+                tempora vel mollitia, asperiores natus veritatis placeat
+                adipisci rerum qui quasi cupiditate error non nam eius officiis
+                eos! Laborum facere laboriosam quod?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="story">
+            <div class="story__img">
+              <img src="./images/nat-7.jpg" alt="" class="story__img--box" />
+              <div class="story__img--caption">
+                <p>Marry Smith</p>
+              </div>
+            </div>
+            <div class="story__info">
+              <h3 class="heading-tertiary">
+                I HAD THE BEST WEEK EVER WITH MY FAMILY
+              </h3>
+              <p class="text-box">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus facilis qui dolores eum numquam asperiores magnam
+                quibusdam quisquam dolorum eligendi voluptatem voluptate, itaque
+                molestiae consectetur molestias quae quidem sint odit!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="book-now" id="book-now">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <form action="#" class="form">
+                <h2 class="heading-secondary u-margin-bottom--medium">
+                  start booking now
+                </h2>
+                <div class="form__group">
+                  <input
+                    placeholder="fullname"
+                    class="form__input"
+                    name="fullname"
+                    type="text"
+                    autocomplete="off"
+                    required
+                  />
+                  <label for="" class="form__label">fullname</label>
+                </div>
+                <div class="form__group">
+                  <input
+                    placeholder="email"
+                    class="form__input"
+                    name="fullname"
+                    type="email"
+                    required
+                    autocomplete="off"
+                  />
+                  <label for="" class="form__label">email</label>
+                </div>
+                <div class="form__group">
+                  <input type="radio" name="radio" />
+                  <label for="">Small Group </label>
+                </div>
+                <div class="form__group">
+                  <input class="" type="radio" name="radio" />
+                  <label for="">Large Group </label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__logo">
+          <img class="footer__logo-img" src="images/logo-green-2x.png" alt="" />
+        </div>
+        <div class="footer__info">
+          <div class="footer__info-nav">
+            <a href="#" class="footer__info-nav-link">COMPANY</a>
+            <a href="#" class="footer__info-nav-link">CONTACT US</a>
+            <a href="#" class="footer__info-nav-link">CARRERS</a>
+            <a href="#" class="footer__info-nav-link">PRIVACY POLICY</a>
+            <a href="#" class="footer__info-nav-link">TERMS</a>
+          </div>
+          <div class="footer__info-nav">
+            <p class="footer__info-nav-txt">
+              Built by
+              <span class="footer__info-nav-link">JONAS SCHMEDTMANN</span> for
+              his online course
+              <span class="footer__info-nav-link">ADVANCED CSS AND SASSN</span>.
+              Copyright © by Jonas Schmedtmann. You are 100% allowed to use this
+              webpage for both personal and commercial use, but NOT to claim it
+              as your own design. A credit to the original author, Jonas
+              Schmedtmann, is of course highly appreciated!
+            </p>
+          </div>
+        </div>
+      </footer>
+      <div class="popup" id="popup">
+        <div class="popup__content">
+          <div class="popup__left">
+            <img src="./images/nat-8.jpg" alt="" class="popup__img" />
+            <img src="./images/nat-9.jpg" alt="" class="popup__img" />
+          </div>
+          <div class="popup__right">
+            <h2 class="heading-secondary">Start booking now</h2>
+            <h3 class="heading-tertiary">
+              IMPORTANT - PLEASE READ THESE TERMS BEFORE BOOKING
+            </h3>
+            <div class="popup__textbox">
+              <div class="popup__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laboriosam hic commodi culpa iste, porro, officiis ipsam aperiam
+                esse delectus numquam ad quo, aliquid ea nam aspernatur
+                exercitationem voluptatum nesciunt voluptatem ullam doloremque
+                quos molestias! Aliquid ipsam eaque tenetur repudiandae dolorum.
+              </div>
+              <div class="popup__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laboriosam hic commodi culpa iste, porro, officiis ipsam aperiam
+                esse delectus numquam ad quo, aliquid ea nam aspernatur
+                exercitationem voluptatum nesciunt voluptatem ullam doloremque
+                quos molestias! Aliquid ipsam eaque tenetur repudiandae dolorum.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
+                quaerat?
+              </div>
+            </div>
+            <div class="btn-box">
+              <div class="header__title--btn header__title--btn-green">
+                BUY NOW!
+              </div>
+            </div>
+            <a class="popup__exit" href="#card">x</a>
+          </div>
+        </div>
+      </div>
     </main>
+    <script>
+      const HideFunc = (e) =>
+        (document.getElementById("nav__check").checked = false);
+    </script>
   </body>
 </html>

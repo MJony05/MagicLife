@@ -51,4 +51,19 @@
     transform: scale(1.6);
     opacity: 0;
   }
+  &-green {
+    background-color: green;
+    text-align: center;
+
+    display: inline-block;
+
+    color: white;
+    &::after {
+      background-color: green;
+    }
+  }
+}
+.btn-box {
+  width: 100%;
+  text-align: center;
 }
