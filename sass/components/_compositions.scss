@@ -21,7 +21,7 @@
       left: 20%;
     }
     &:hover {
-      z-index: 20;
+      z-index: 1;
       transform: scale(1.3);
       outline: 1rem solid $color-primary;
       outline-offset: 1rem;

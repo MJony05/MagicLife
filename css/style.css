@@ -160,7 +160,7 @@ body {
       top: 10rem;
       left: 20%; }
     .composition__photo:hover {
-      z-index: 20;
+      z-index: 1;
       transform: scale(1.3);
       outline: 1rem solid #7ed56f;
       outline-offset: 1rem; }
